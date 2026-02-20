@@ -162,6 +162,10 @@ body {
     flex-shrink: 0;
 }
 
+a.quick-filter-btn {
+    text-decoration: none;
+}
+
 .quick-filter-btn:hover {
     background: #e0e0e0;
 }
