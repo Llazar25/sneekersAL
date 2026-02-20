@@ -32,15 +32,15 @@
 
     <!-- Kategoritë e shpejta -->
     <div class="quick-filters">
-        <button class="quick-filter-btn active" data-model="all">Të gjitha</button>
-        <button class="quick-filter-btn" data-model="Nike">Nike</button>
-        <button class="quick-filter-btn" data-model="Addidas">Addidas</button>
-        <button class="quick-filter-btn" data-model="New Balance">New Balance</button>
-        <button class="quick-filter-btn" data-model="Louis Vuitton">Louis Vuitton</button>
-        <button class="quick-filter-btn" data-model="Dior">Dior</button>
-        <button class="quick-filter-btn" data-model="Vans">Vans</button>
-        <button class="quick-filter-btn" data-model="Valentino">Valentino</button>
-        <button class="quick-filter-btn" data-model="Versace">Versace</button>
+        <a class="quick-filter-btn active" href="#products" data-model="all">Të gjitha</a>
+        <a class="quick-filter-btn" href="#products" data-model="Nike">Nike</a>
+        <a class="quick-filter-btn" href="#products" data-model="Addidas">Addidas</a>
+        <a class="quick-filter-btn" href="#products" data-model="Puma">Puma</a>
+        <a class="quick-filter-btn" href="#products" data-model="Louis Vuitton">Louis Vuitton</a>
+        <a class="quick-filter-btn" href="#products" data-model="Dior">Dior</a>
+        <a class="quick-filter-btn" href="#products" data-model="Vans">Vans</a>
+        <a class="quick-filter-btn" href="#products" data-model="Valentino">Valentino</a>
+        <a class="quick-filter-btn" href="#products" data-model="Versace">Versace</a>
     </div>
 
     <!-- Pjesa kryesore -->
@@ -49,19 +49,21 @@
             <!-- Produktet Just In -->
             <section class="featured-products">
                 <div class="section-title">
-                    <h2>Just In</h2>
-                    <a href="#" class="see-all">Shiko të gjitha</a>
+                    <h2 >Just In</h2>
+                    <a href="#all-products" class="see-all">Shiko të gjitha</a>
                 </div>
                 
                 <div class="nike-style-grid" id="just-in-products">
                     <!-- Produktet do të shfaqen këtu nga JavaScript -->
                 </div>
+                
+                <div id="products"></div>
             </section>
             
             <!-- Të gjitha produktet -->
             <section class="brand-models-section">
                 <div class="section-title">
-                    <h2>Koleksioni ynë</h2>
+                    <h2 >Koleksioni ynë</h2>
                     <div class="sort-options">
                         <select id="sort-select">
                             <option value="random">Të rastësishme</option>
@@ -77,7 +79,7 @@
                 
                 <div class="load-more-container">
                     <button id="load-more-btn" class="load-more-btn">
-                        <i class="fas fa-redo"></i> Shfaq më shumë produkte
+                        <i class="fas fa-redo"></i> Shfaq produktet
                     </button>
                 </div>
             </section>
@@ -235,4 +237,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>>
+</html>
