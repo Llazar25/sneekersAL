@@ -4,7 +4,7 @@ let filteredProducts = [];
 let cart = [];
 let currentModelFilter = 'all';
 let currentSort = 'random';
-let displayedCount = 12; // Rivendos këtë variabël
+let displayedCount = 10; // Rivendos këtë variabël
 let selectedProduct = null;
 let selectedColor = null;
 let selectedSize = null;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
 });
 
-// Funksioni për formatimin e çmimeve në Lekë
+// Funksioni për formatimin e çmimeve në Lekë 
 function formatPrice(priceInCents) {
     // Nëse çmimet janë tashmë në Lekë, përdorni:
     return `${priceInCents} Lekë`;
@@ -242,7 +242,7 @@ function renderJustInProducts() {
             <button class="quick-action-btn" 
                     data-id="${product.id}"
                     title="Zgjidhni opsionet">
-                <i class="fas fa-cog"></i>
+                <i class="fas fa-eye"></i>
             </button>
         `;
         
@@ -304,7 +304,7 @@ function renderAllProducts() {
             <button class="quick-action-btn" 
                     data-id="${product.id}"
                     title="Zgjidhni opsionet">
-                <i class="fas fa-cog"></i>
+                <i class="fas fa-eye"></i>
             </button>
         `;
         
@@ -808,7 +808,7 @@ function sendToWhatsApp() {
     const encodedMessage = encodeURIComponent(message);
     
     // Numri i WhatsApp të dyqanit
-    const whatsappNumber = '+355694707750'; // Zëvendëso me numrin real
+    const whatsappNumber = '+355690000000'; // Zëvendëso me numrin real
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     
     // Hap WhatsApp
